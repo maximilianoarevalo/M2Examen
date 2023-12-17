@@ -127,7 +127,6 @@
 .destination-card img{
     width: 45vh;
     height: auto;
-    position: relative;
 }
 
 .destination-name{
@@ -246,14 +245,14 @@
         display: grid;
         grid-template-areas:
         "menu destinations"
-        "menu destinations"
         "menu recomendation"
-        "footer footer";
+        "menu ranking"
+        "footer footer"; 
     }
 
     #menu{
         grid-area: menu;
-        background-color: #1c3166;
+        background-color: #8d7966;
         min-height: 90vh;
         color: white;
         display: flex;
@@ -264,8 +263,8 @@
 
     #destinations{
         grid-area: destinations;
-        background-color: white;
-        /* min-height: 100vh; */
+        background-color: #f8f1e9;
+        min-height: 100%; 
         color: white;
         display: flex;
         flex-direction: column;
@@ -274,16 +273,26 @@
         gap: 10px;
     }
 
-    
-    #footer{
-        grid-area: footer;
-        background-color: #0f1934;
+    #ranking{
+        grid-area: ranking;
+        background-color: #f8f1e9;
         min-height: 10vh;
-        color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    
+    #footer{
+        grid-area: footer;
+        background-color: #8d7966;;
+        min-height: 10vh;
+        color: #f8f1e9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid;
     }
 
     .menu .menu-burger{
@@ -294,6 +303,10 @@
         padding-top: 25px;
         padding-bottom: 30px;
         padding-right: 15px;
+    }
+
+    .menu .menu-title span{
+        font-size: 20px;
     }
 
     .menu .menu-options{
@@ -311,34 +324,32 @@
         display: none;
     }
 
+    .menu .menu-options a{
+        font-size: 17px;
+        color: #f8f1e9;
+        text-decoration: none;
+        padding-bottom: 10px;
+    }
+
     .destination-gallery{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        overflow-y: scroll;
-        max-height: 75vh;
-        /* padding: 10px; */
         gap: 10px;
-        /* margin-top: -10px; */
     }
 
     .destination-card{
-        background-color: white;
-        width:  400px;
+        width:  450px;
         height: auto;
-        /* min-width: 20vw; */
         display: flex;
-        /* flex-direction: row; */
-        /* justify-content: center;
-        align-items: center;  */
         margin-top: 10px;
         overflow: hidden;
     }
 
-    .destination-card-desktop img{
-        width: 50px;
-        height: 25vh;
-        padding-bottom: 20px;
+    .destination-card img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     
     .destination-name{
@@ -374,6 +385,26 @@
         width: 80%;
         margin-top: 10px;
         text-align: center;
+    }
+
+    .footer .mail-section .form-control-name{
+        height: 3vh;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .footer .mail-section .form-control-text{
+        height: 10vh;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .footer .mail-section button{
+        width: 50px;
+    }
+    
+    .footer .social-text{
+        padding: 10px;
     }
 
     
