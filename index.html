@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ciudades de Chile</title>
+    <title>Turismo en Chile</title>
     <link rel="stylesheet" href="./assets/styles/styles.css" />
     <link rel="icon" type="image/x-icon" href="./assets/img/chile.png" />
     <script
@@ -20,78 +20,73 @@
             <span>Turismo en Chile</span>
           </div>
           <div class="right">
-            <a href="#norte">Destinos</a>
-            <a href="#centro">Recomendaciones</a>
-            <a href="#sur">Contacto</a>
+            <a href="#destinations">Destinos</a>
+            <a href="#recomendation">Recomendaciones</a>
+            <a href="#ranking">Ranking</a>
           </div>
         </div>
         <div class="menu-options">
           <span>Destinos</span>
           <span>Recomendaciones</span>
           <span>Contacto</span>
+          <span>Ranking</span>
         </div>
-        <!-- <div class="menu-burger">
-          <i class="fa-solid fa-bars fa-sm" style="color: #ffffff"></i>
-        </div> -->
       </div>
-      <div id="destinos" class="destinos">
-        <span class="destinos-title">Destinos</span>
-        <div class="product-gallery">
-          <div class="product-card">
+      <div id="destinations" class="destinations">
+        <span class="destinations-title">Destinos</span>
+        <div class="destination-gallery">
+          <div class="destination-card">
             <img src="./assets/img/arica.jpg" alt="Tesla" />
           </div>
-          <div class="product-card">
+          <div class="destination-card">
             <img src="./assets/img/iquique.jpg" alt="Tesla" />
           </div>
-          <div class="product-card">
-            <img src="./assets/img/iquique.jpg" alt="Tesla" />
-          </div>
-          <div class="product-card">
+          <div class="destination-card">
             <img src="./assets/img/antofagasta.jpg" alt="Tesla" />
           </div>
-          <div class="product-card">
+          <div class="destination-card">
             <img src="./assets/img/calama.png" alt="Tesla" />
           </div>
-          <div class="product-card">
+          <div class="destination-card">
             <img src="./assets/img/copiapo.jpg" alt="Tesla" />
           </div>
-          <div class="product-card">
+          <div class="destination-card">
             <img src="./assets/img/laserena.jpg" alt="Tesla" />
           </div>
-          <div class="product-card">
+          <div class="destination-card">
             <img src="./assets/img/coquimbo.jpg" alt="Tesla" />
           </div>
-          <div class="product-card">
+          <div class="destination-card">
             <img src="./assets/img/viña.jpg" alt="Tesla" />
           </div>
-          <div class="product-card">
+          <div class="destination-card">
             <img src="./assets/img/valparaiso.jpg" alt="Tesla" />
           </div>
-          <div class="product-card">
+          <div class="destination-card">
             <img src="./assets/img/santiago.jpg" alt="Tesla" />
           </div>
-          <div class="product-card">
+          <div class="destination-card">
             <img src="./assets/img/rancagua.jpg" alt="Tesla" />
           </div>
-          <div class="product-card">
+          <div class="destination-card">
             <img src="./assets/img/talca.jpg" alt="Tesla" />
           </div>
-          <div class="product-card">
+          <div class="destination-card">
             <img src="./assets/img/chillan.jpg" alt="Tesla" />
           </div>
-          <div class="product-card">
+          <div class="destination-card">
             <img src="./assets/img/concepcion.jpg" alt="Tesla" />
           </div>
-          <div class="product-card">
+          <div class="destination-card">
             <img src="./assets/img/ptomontt.jpg" alt="Tesla" />
           </div>
-          <div class="product-card">
+          <div class="destination-card">
             <img src="./assets/img/chiloe.jpg" alt="Tesla" />
           </div>
-          <div class="product-card">
+          <div class="destination-card">
             <img src="./assets/img/coyhaique.jpg" alt="Tesla" />
           </div>
-          <div class="product-card">
+          <div class="destination-card">
             <img src="./assets/img/puntaarenas.jpg" alt="Tesla" />
           </div>
         </div>
@@ -106,17 +101,40 @@
           </div>
         </div>
 
+        <div id="ranking" class="ranking">
+          <span class="ranking-title">Ranking de visita</span>
+          <div class="rankings">
+            <span class="ranking-text">Las preferencias de los turistas nos permiten elaborar un ranking con los 5 destinos más visitados, en el siguiente orden:</span>
+            <ul class="ranking-list">
+              <li class="ranking-item">1° Viña del Mar</li>
+              <li class="ranking-item">2° La Serena</li>
+              <li class="ranking-item">3° Iquique</li>
+              <li class="ranking-item">4° Concepción</li>
+              <li class="ranking-item">5° Puerto Montt</li>
+            </ul>
+          </div>
+        </div>
+
         <div id="footer" class="footer">
-          <span>Encuéntranos en nuestras redes sociales</span>
+          <div class="mail-section">
+            <span class="contact-text">Escríbenos para recibir más información</span>
+            <input class="form-control-name" type="text" placeholder="Nombre" />
+            <input
+              class="form-control-text"
+              type="text"
+              placeholder="Tu mensaje ...."
+            />
+            <button type="button"><b>Enviar</b></button>
+          </div>
+          <span class="social-text">Encuéntranos en nuestras redes sociales</span>
           <div class="footer-icons">
             <i
               class="fa-brands fa-facebook fa-sm"
               style="padding-right: 5px"
             ></i>
-            <i class="fa-brands fa-instagram fa-sm"></i>
-            
+            <i class="fa-brands fa-instagram fa-sm" style="padding-right: 5px"></i>
+            <i class="fa-solid fa-envelope fa-sm"></i>
           </div>
-          <span>contacto@turismoenchile.cl</span>
 
           <div class="footer-text">
             <span>Todos los derechos reservados</span>
