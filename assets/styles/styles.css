@@ -118,16 +118,39 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 25px;
+    position: relative;
 }
 
-.destination-card-desktop{
-    display: none;
-}
 
 .destination-card img{
     width: 45vh;
     height: auto;
+    filter: grayscale(100%);
+    transition: filter .5s ease-in-out;
 }
+
+.destination-card img:hover{
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+.destination-img-name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    display: none;
+    transition-delay: .5s;
+  }
+  
+  .destination-card:hover .destination-img-name{
+    display: block;
+    background-color: black;
+    padding: 5px;
+  }
 
 .destination-name{
     margin-bottom: 10px;
