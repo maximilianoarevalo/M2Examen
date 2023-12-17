@@ -142,12 +142,13 @@
     color: white;
     font-size: 18px;
     text-align: center;
-    display: none;
+    display: block;
+    background-color: black;
     transition-delay: .5s;
   }
   
   .destination-card:hover .destination-img-name{
-    display: block;
+    display: none;
     background-color: black;
     padding: 5px;
   }
